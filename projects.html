@@ -6,6 +6,9 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
+    <script src="js/bootstrap.bundle.min.js">
+
+    </script>
     <style>
       a{
         text-decoration: none;
@@ -16,21 +19,28 @@
   <body>
 
     <nav class="navbar navbar-expand-sm bg-light">
-      <a class="navbar-brand"  style="position: relative; top: 5%; left: 10%;"><img src="#" alt="Balaji"></a>
-      <ol class="navbar-nav ms-auto">
-          <li class="nav-item">
-              <a href="home.html" class="nav-link">Home</a>
-             </li>
-          <li class="nav-item">
-           <a href="projects.html" class="nav-link">My Projects</a>
-          </li>
-          <li class="nav-item">
-           <a href="about.html" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-           <a href="contact.html" class="nav-link">Contact Me</a>
-          </li>
-      </ol>
+      <div class="container">
+      <a class="navbar-brand"><img src="#" alt="Balaji"></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynav">
+          <ol class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a href="home.html" class="nav-link">Home</a>
+                 </li>
+              <li class="nav-item">
+               <a href="projects.html" class="nav-link active">My Projects</a>
+              </li>
+              <li class="nav-item">
+               <a href="about.html" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+               <a href="contact.html" class="nav-link">Contact Me</a>
+              </li>
+          </ol>
+      </div>
+  </div>
  </nav>
     <div class="container-fluid" style="background-color: whitesmoke;">
     <h1 style="color: rgba(0,0,0,0.7); padding-top: 1%;">
@@ -60,6 +70,15 @@
           <div class="card-body">
             <b>DICTIONARY API</b>
             <p class="card-text">A particular word parts of speech,meaning,antonyms and synonyms will be displayed using DICTIONARY API.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="padding-top: 3%;">
+        <div class="card" style="width: 18rem;">
+          <a href="#"><img class="card-img-top" src="project4.png" alt="Card image cap"></a>
+          <div class="card-body">
+            <b>RENT PREDICTOR</b>
+            <p class="card-text">This application predicts the rent in cities like Ahmedabad,Banglore,Chennai,Delhi,Hyderabad,Mumbai,Kolkata and Pune based upon bedrooms and area using multiple regression algorithm.</p>
           </div>
         </div>
       </div>

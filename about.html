@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js">
+
+    </script>
 </head>
 <body style="background-color: whitesmoke;">
-    <nav class="navbar navbar-expand-sm bg-light">
-        <a class="navbar-brand"  style="position: relative; top: 5%; left: 10%;"><img src="#" alt="Balaji"></a>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container">
+    <a class="navbar-brand"><img src="#" alt="Balaji"></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynav">
         <ol class="navbar-nav ms-auto">
             <li class="nav-item">
                 <a href="home.html" class="nav-link">Home</a>
@@ -17,16 +25,18 @@
              <a href="projects.html" class="nav-link">My Projects</a>
             </li>
             <li class="nav-item">
-             <a href="about.html" class="nav-link">About Me</a>
+             <a href="about.html" class="nav-link active">About Me</a>
             </li>
             <li class="nav-item">
              <a href="contact.html" class="nav-link">Contact Me</a>
             </li>
         </ol>
-   </nav>
+    </div>
+</div>
+</nav>
 
-   <h1 style="padding-top: 1%;">About Me</h1>
-<div class="container" style="padding-top: 3%;">
+   <h1 >About Me</h1>
+<div class="container">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="me.png" alt="Balaji">
             <div class="card-body">
@@ -36,7 +46,7 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                     <b>Skills : </b>
-                    HTML,CSS,Java Script,Python,Django,Mysql
+                    HTML,CSS,Java Script,Bootstrap,Python,Django,Mysql
               </li>
               <li class="list-group-item">Studying Engineering Third Year(E3) At RGUKT Nuzvid</li>
               <li class="list-group-item">Completed Two years of Pre University Course At RGUKT Nuzvid With CGPA 9.1</li>
